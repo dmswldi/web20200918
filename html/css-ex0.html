@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .div {
+                width: 100px;
+                height: 100px;
+                background-color:darkcyan;
+                position: relative;
+                animation-name: ex;
+                animation-duration: 3s;
+                /* animation-iteration-count: infinite;
+                animation: ex 3s relative; */
+
+            }
+
+            @Keyframes ex {
+                0%      {background-color: darkcyan; left: 0px; top:0px;}
+                25%     {background-color: darkgray; left: 0px; top: 200px;}
+                50%     {background-color: darkorange; left:200px; top:200px;}
+                75%     {background-color: dodgerblue; left: 200px; top:0px;}
+                100%    {background-color: greenyellow; left:0px; top:0px;}
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: grey; width: 700px; height:700px;"></div>
+        <div class="div"></div>
+    </body>
+</html>

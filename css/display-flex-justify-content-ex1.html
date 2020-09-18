@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #div1 {
+                background-color: blue;
+                text-align: right;
+                font-size: 50px;
+                width: 500px;
+                height: 200px;
+                flex: 1 0 0; /* 0 + 알파, grow 설정하면 basis auto에서 0됨 */
+                /* flex-grow: 1; default:0, 남은 공간 나눠갖는 방식! 얘가 알파!
+                flex-basis: auto; default, 너비 500 + 알파 (grow)남은 공간 먹기
+                flex 디폴트값 0 1 auto */
+            }
+            #div2 {
+                background-color: yellow;
+                width: 100px;
+                flex-grow: 1; /* 0+a */
+            }
+            #div3 {
+                background-color: red;
+                width: 50px;
+                flex-grow: 2;
+            }
+            #div4 {
+                background-color: gold;
+                width: 50px;
+            }
+            #div5 {
+                background-color: linen;
+            }
+            .container {
+                display: flex; /* flex item이 됨. block level. 수.평.정.렬! */
+                height: 500px;
+                justify-content: space-between;/* 좌우 정렬 방법 */
+                align-items: baseline; /* default: stretch */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- .container>#div$*5>{$} -->
+        <div class="container">
+            <div id="div1">1</div>
+            <div id="div2">2</div>
+            <div id="div3">3</div>
+            <div id="div4">4</div>
+            <div id="div5">5</div>
+        </div>
+    </body>
+</html>

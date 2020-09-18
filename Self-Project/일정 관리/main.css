@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.leftIcon {
+    float: left;
+    height: 100%;
+    width: 30%;
+    border-right: 1px solid darkgray;
+    text-align: center;
+
+}
+.leftIcon img {
+    display: inline-block;
+    padding: 28px;
+}
+.leftButton:hover {
+    background-color: lightsteelblue;
+    border-radius: 30px;
+}
+html, body {
+    margin: 0;
+    height: 100%;
+}
+.leftSide {
+    float: left;
+    height: 100%;
+    width: 418px;
+    border-right: 1px solid darkgray;
+}
+
+.leftList {
+    height: 100%;
+    width: 70%;
+    float: right;
+}
+
+.rightSide {
+    float: right;
+    height: 100%;
+    text-align: center;
+    width: 78%;
+    /* border: 3px solid orange; */
+}
+#date {
+    margin-left: 20px;
+    margin-top: 25px;
+}
+#profile {
+    /* margin-top: 80px; */
+    padding: 40px;
+    text-align: center;
+    border: 1px solid darkgray;
+    border-radius: 70px;
+}
+.rheader {
+    border: 1px solid red;
+    /* float: top; */
+    padding: 50px;
+    text-align: center;
+}
+#name { 
+    width: 120px;
+    
+}
+#name:hover {
+    color: darkblue;
+}

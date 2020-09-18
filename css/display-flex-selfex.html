@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            .container {
+                display: flex;
+                height: 150px; /* 부모한테 height 지정 */
+                flex-direction: column;
+            }
+            #div1 {
+                background-color: blue;
+                /* width: 100px; */
+                height: 100px;
+                flex-basis: 10px;
+                /* width 설정하는 것과 basis 설정하는 것 차이가 무엇? OK*/
+                flex-grow: 1;
+            }
+            #div2 {
+                background-color: red;
+                flex: 1;
+            }
+            #div3 {
+                background-color: yellow;
+            }
+            #div4 {
+                background-color: green;
+            }
+            #div5 {
+                background-color: blueviolet;
+                flex: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="div1">1</div>
+            <div id="div2">2</div>
+            <div id="div3">3</div>
+            <div id="div4">4</div>
+            <div id="div5">5</div>
+        </div>
+    </body>
+</html>

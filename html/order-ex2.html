@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>달콤한 간식이 가득 달달박스</title>
+        <link rel="stylesheet" href="mystyle.css">
+        <style>
+            h1 {
+                text-align: center;
+                /* display: fixed;
+                margin-top: 90px; */
+            }
+            .chocolate {
+                text-align: center;
+                /* display: abolute;
+                margin: 70px; */
+            }
+            img {
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            body {
+                font-family: D2Coding;
+            }
+            #ghana1, #ghana2, #snickers, #bonobon, #twix, #caramel, #crunky {
+                margin-right: 100px;
+            } 
+        </style>
+    </head>
+    <body>
+        <div class="chocolate">
+            <h1>💕달달박스💕</h1>
+            <form name="order" action="tulip.jpg" method="POST">
+                <img src="가나 마일드.jpg" alt="가나 마일드" width="250px height="250px" >
+                <img src="가나 밀크.jpg" alt="가나 밀크" width="250px height="250px">
+                <img src="스니커즈.jpg" alt="스니커즈" width="250px height="250px">
+                <br>
+                
+                <div class="quantity">
+                    가나 마일드 <input type="number" id="ghana1" name="ghana1" min="0" max="10">
+                    가나 밀크 <input type="number" id="ghana2" name="ghana2" min="0" max="10">
+                    스니커즈 <input type="number" id="snickers" name="snickers" min="0" max="10">
+                </div>
+                
+                <br>
+                <img src="본오본.jpg" alt="본오본" width="250px height="250px">
+                <img src="트윅스.jpg" alt="트윅스" width="250px height="250px">
+                <img src="밀크카라멜.jpg" alt="밀크카라멜" width="250px height="250px">
+                <img src="크런키.jpg" alt="크런키" width="250px height="250px">
+                
+                <br>
+                <div class="quantity">
+                    본오본 <input type="number" id="bonobon" name="bonobon" min="0" max="10">
+                    트윅스 <input type="number" id="twix" name="twix" min="0" max="10">
+                    밀크카라멜 <input type="number" id="caramel" name="caramel" min="0" max="10">
+                    크런키 <input type="number" id="crunky" name="crunky" min="0" max="10">
+                </div>
+                <br>
+                <input type="image" src="주문버튼.jpg" alt="주문하기">
+            </form>
+        </div>
+    </body>
+</html>

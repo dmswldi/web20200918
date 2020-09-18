@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            .my-menu {
+                display: flex;
+                /* justify-content: space-between; */
+                background-color: green;
+                height: 80px;
+                align-items: center;
+            }
+            .menu-item {
+                color: white;
+                font-size: 25px;
+                font-weight: bold;
+                padding: 25px 10px;
+            }
+            .menu-item:hover {
+                color: black;
+                background-color: #fff;
+            }
+            #dummy {
+                flex: 1; /* 기본값default는 0 1 0*/
+                /* flex-grow: 1; */
+            }
+            .main-container {
+                margin-top: 30px;
+                display: flex;
+                /* height: 500px; */
+            }
+            .main-container > div {
+                border: 5px solid black;
+            }
+
+            .side-menu {
+                width: 200px;
+            }
+            .main-content {
+                flex: 1;
+            }
+            .ad-container {
+                width: 200px;
+            }
+            
+            .menu-item {
+                position: relative;
+            }
+            .sub-menu {
+                position: absolute;
+                display: none;
+                top: 80px;
+                left: 0px;
+                padding: 10px;
+                background-color: white;
+                border-top: 5px solid green;
+            }
+            .menu-item:hover .sub-menu {
+                /* { menu-item에 hover하면 sub-menu가 보임 */
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <!-- 메뉴바 -->
+            <div class="my-menu">
+                <div class="menu-item">
+                    TUTORIALS <i class="fas fa-caret-down"></i>
+                    <div class="sub-menu">
+                        <div class="sub-item">Lorem.</div>
+                        <div class="sub-item">Animi.</div>
+                        <div class="sub-item">Consectetur.</div>
+                        <div class="sub-item">Earum!</div>
+                        <div class="sub-item">Quo.</div>
+                    </div>
+                </div>
+                <div class="menu-item">REFERENCES <i class="fas fa-caret-down"></i></div>
+                <div class="menu-item">EXAMPLES <i class="fas fa-caret-down"></i></div>
+                <div class="menu-item">EXERCISSES <i class="fas fa-caret-down"></i></div>
+                
+                <div id="dummy"></div>
+
+                <div class="menu-item"><i class="fas fa-adjust"></i></div>
+                <!-- i.fas.fa-adjust -->
+                <div class="menu-item"><i class="fas fa-globe-americas"></i></div>
+                <div class="menu-item"><i class="fas fa-search"></i></div>
+            </div>
+
+        <!-- 컨텐츠 -->
+        <div class="main-container">
+             <div class="side-menu">
+                 <div>Lorem.</div>
+                 <div>Ab!</div>
+                 <div>Nihil.</div>
+                 <div>Adipisci.</div>
+                 <div>Pariatur.</div>
+                 <div>Enim!</div>
+                 <div>Voluptatem?</div>
+                 <div>Totam.</div>
+                 <div>Ut?</div>
+                 <div>Officia.</div>
+                 <div>Natus!</div>
+                 <div>Non?</div>
+                 <div>Modi?</div>
+                 <div>Laboriosam.</div>
+                 <div>Vel.</div>
+                 <div>Illo.</div>
+                 <div>Alias.</div>
+                 <div>Ut.</div>
+                 <div>Doloremque.</div>
+                 <div>Suscipit.</div>
+                 <div>Quidem.</div>
+                 <div>Consectetur.</div>
+                 <div>Velit?</div>
+                 <div>A?</div>
+                 <div>Non.</div>
+                 <div>In?</div>
+                 <div>Error.</div>
+                 <div>In!</div>
+                 <div>Tempore!</div>
+                 <div>Aut?</div>
+             </div>
+            <div class="main-content">
+                <!-- (h1>lorem3^p>lorem)*10 -->
+                <h1>Lorem, ipsum dolor.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dolor reiciendis inventore nulla nobis nostrum tempore excepturi, et, sapiente quasi suscipit eum porro, optio a eaque repudiandae maxime velit praesentium.</p>
+                <h1>Dolor, sequi asperiores.</h1>
+                <p>Vitae soluta consequatur consectetur nobis consequuntur blanditiis ex illo molestiae debitis labore harum, expedita ea corrupti quasi? Dolore porro fugiat quod numquam assumenda nulla suscipit eum! Incidunt accusamus aperiam libero!</p>
+                <h1>Eveniet, beatae voluptatem!</h1>
+                <p>Temporibus non, debitis totam alias corporis dolores illo nihil dignissimos error, est eius sunt eaque cumque quidem natus possimus officiis impedit! Ratione doloribus suscipit unde modi ipsum earum cum nostrum.</p>
+                <h1>Ullam, dolorum iste.</h1>
+                <p>Quae, aut beatae totam eius dicta quidem facilis deserunt! Reprehenderit ab beatae illum, ipsum maxime vitae repellat excepturi! Quam ipsam sapiente dicta, iusto eveniet doloribus rerum sunt molestiae quod enim!</p>
+                <h1>Tempore, architecto doloribus.</h1>
+                <p>Atque commodi ut dolorum porro fugiat expedita nostrum quae sunt eveniet ad ea consequuntur est dolorem, veritatis pariatur ratione officiis, voluptates id optio perspiciatis ipsum veniam. Error eaque aliquid vitae.</p>
+                <h1>Voluptas, possimus pariatur.</h1>
+                <p>Nihil dolorum eum culpa necessitatibus repellat velit harum tempora qui quia ea doloribus reiciendis assumenda provident veniam reprehenderit labore, ipsum nobis consequuntur. Unde, doloribus porro provident quae sed expedita necessitatibus.</p>
+                <h1>Id, itaque nulla.</h1>
+                <p>Itaque doloremque, explicabo sit praesentium pariatur harum beatae deserunt modi quas velit corporis eveniet iste, iure vero eum! Soluta voluptas ab molestias atque porro dicta aliquam rem exercitationem repellat natus?</p>
+                <h1>Voluptates, ullam beatae!</h1>
+                <p>Suscipit modi atque totam rerum saepe cupiditate consectetur minus dignissimos perferendis soluta, quis eaque? Laudantium fugiat quae, suscipit totam aut deleniti qui quibusdam voluptas, beatae, veritatis magni cumque iure quas?</p>
+                <h1>Earum, provident nihil.</h1>
+                <p>Aut ipsum magni consequatur architecto modi enim excepturi, eligendi sint obcaecati, quo distinctio asperiores necessitatibus libero aperiam ullam, pariatur facere aspernatur quibusdam ea vitae maxime? Cupiditate praesentium voluptas dicta aperiam!</p>
+                <h1>Blanditiis, sunt facere.</h1>
+                <p>Magnam placeat alias maiores sapiente inventore, ut similique nihil voluptates aliquid? Facilis eos deserunt pariatur, rerum impedit temporibus distinctio in praesentium nemo, suscipit ex doloremque dolor debitis itaque animi autem?</p>
+            </div>
+            <div class="ad-container"></div>
+        </div>
+
+        </div>
+    </body>
+</html>
