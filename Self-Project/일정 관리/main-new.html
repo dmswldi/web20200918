@@ -5,18 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Planner - Plan your life. Make a perfect day.</title>
         <link rel="stylesheet" href="main-new.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="main.js" type="text/javascript"></script>
     </head>
     <body>
         <div class="left-side">
             <div class="left-menu">
                 <img src="plogo.png" alt="plogo" id="plogo"> <br>
                 <hr> <br>
-                <img src="plus0.png" alt="plus" class="menu"> <br>
-                <img src="star0.png" alt="star" class="menu"> <br>
-                <img src="setting0.png" alt="setting" class="menu">
+                <img src="plus0.png" alt="plus" class="menu" id="plus"> <br>
+                <!--modal start -->
+                <div class="plus-modal">
+                    <h3>Things to do : </h3>
+                    <div>Memo: </div>
+                    <button value="Add"></button>
+                </div>
+                <!-- modal end -->
+                <img src="star0.png" alt="star" class="menu" id="star"> <br>
+                <img src="setting0.png" alt="setting" class="menu" id="setting">
             </div>
             <div class="left-list">
-               <h2 id="date">9월 17일</h2> <!--js로 날짜 함수 삽입 new Date() -->
+               <h2 id="date">9월 17일</h2> 
+               <!--js로 날짜 함수 삽입 new Date() -->
             </Div>
         </div>
 
