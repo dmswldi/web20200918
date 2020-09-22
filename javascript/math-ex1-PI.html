@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        반지름 : <input type="number" id="input1"> <br>
+        <button onclick="length()">원의 둘레</button>
+        <button onclick="area()">원의 넓이</button>
+        <p id="result"></p>
+
+
+        <script>
+            function length(){
+                var r = document.getElementById("input1").value; // 반지름, r은 스트링타입
+                r = Number(r);
+                var len = r * 2 * Math.PI; // 원 둘레
+                document.getElementById("result").innerHTML = len;
+            }
+            function area(){
+                var r = document.getElementById("input1").value;
+                r = Number(r);
+                var a = Math.PI * r * r;
+                document.getElementById("result").innerHTML = a;
+
+            }
+        </script>
+    </body>
+</html>

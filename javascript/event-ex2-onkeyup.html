@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <input onkeyup="show()" type="text" id="input1">
+        <p id="result"></p>
+        
+        <script>
+            function show(){
+                var txt = document.getElementById("input1").value;
+                // console.log(txt);
+                document.getElementById("result").innerHTML = txt;
+            }
+        </script>
+    </body>
+</html>

@@ -17,7 +17,6 @@ body {
     flex: 1;
     flex-direction: row;
     width: 22%;
-    border: 5px solid black;
     height: 100%;
 }
 .left-menu {
@@ -41,19 +40,6 @@ body {
     padding: 20px;
     /* 앗쉬 크기 어떻게 키우지 메뉴 애들은 작게 */
 }
-/* Modal */
-.plus-modal {
-    display: none;
-    position: fixed;
-    opacity: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-}
-.plus-modal:target {
-    opacity: 1;
-
-}
 .menu {
     padding: 30px;
     margin-left: 3px; /* center align 못하나? */
@@ -61,10 +47,11 @@ body {
 .menu:hover {
     background-color:dodgerblue;
     border-radius: 30px;
+    cursor: pointer;
 }
 #date {
-    margin-top: 15px;
-    margin-left: 15px;
+    margin-top: 40px;
+    margin-left: 20px;
 }
 
 .right-side {
@@ -99,6 +86,7 @@ body {
 #name:hover {
     background-color: lightsteelblue;
     border-radius: 50px;
+    cursor: pointer;
 }
 
 .right-bottom{
@@ -108,6 +96,51 @@ body {
     width: 100%;
     height: 450px;
     border: 1px solid yellow;
+}
+
+/* Modal */
+.add-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    /* z-index: 1; */
+}
+.add-modal > div {
+    position: fixed;
+    width: 500px;
+    height: 350px;
+    top: 20%;
+    left: 20%;
+    font: 28px D2Coding;
+    background-color: white;
+    border: 5px solid gray;
+    border-radius: 15px;
+    padding: 40px;
+}
+#addButton {
+    border: 1px dashed black;
+    border-radius: 20px;
+    padding:15px 25px;
+    color: gray;
+    font-weight: bold;
+    float: right;
+}
+#closeButton:hover, #addButton:hover {
+    cursor: pointer;
+}
+#todo {
+    font-size: 20px;
+}
+#closeButton {
+    border: none;
+    float: right;
+    /* display: block; */
+}
+#txt {
+    font-size: 20px;
 }
 
 /* Responsive layout */
@@ -133,3 +166,5 @@ body {
         flex: 5;
     }
 }
+
+/* Added Todo List */

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <script>
+            var r = Math.random(); // 괄호 잊지 마 0 <= r < 1
+            console.log(r);
+
+            r = r * 45; // 0 <= r < 45
+            console.log(r);
+
+            r = Math.floor(r); // 0 <= Math.floor(r*45) <=44 버려라 floor
+            console.log(r);
+
+            r = r + 1;
+            console.log(r); // 1 <= Math.floor(r*45)+1 <= 45
+
+            // 1 ~ 10 난수 만들려면 random()*10 + 1
+        </script>
+    </body>
+</html>

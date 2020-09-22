@@ -14,8 +14,7 @@ fieldset { /* 창 크기와 관계 없이 모양 fix=relative */
     /* p랑 안 맞아 중앙에 있게 하자!! */
     position: relative; /* staticX / absolute~fixed 모양 유지는 relative가 딱!!!!*/
     /* absolute하면 무조건 top, left에서 일정px 이상 떨어져있음 */
-    padding: 30px 80px;
-    padding-right: 20px;
+    padding: 40px 80px;
     width: 600px;
     /* left 먹는데 top이 안 먹어 */
     left: 34%;
@@ -46,7 +45,8 @@ input {
     border: 1px solid silver;
     border-radius: 10px;
 }
-input:last-child { 
+/* submit button */
+input:last-child { /* 중앙정렬???? */
     /* float: center; */
     width: 150px;
     height: 40px;
@@ -56,4 +56,15 @@ input:last-child {
     font: 20px D2Coding;
     color: white;
     cursor: pointer;
+}
+#pwdck {
+    /* display: absolute; ? */
+    margin: 0;
+    text-align: center;
+    /* float: right; */
+}
+p {
+    text-align: center;
+    font-family: D2Coding;
+    /* position: ; */
 }

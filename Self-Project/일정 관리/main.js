@@ -1,7 +1,13 @@
 $(document).ready(function(){
+    var date = new Date();
+    document.getElementById("date").innerHTML =  `${date.getMonth() + 1}월 ${date.getDate()}일`;
+
     $("#plus").click(function() {
-        console.log("hi");
+        $(".add-modal").show();
+    });
+    $("#exit").click(function(){
+        $(".add-modal").hide();
     });
 
-
+    
 });

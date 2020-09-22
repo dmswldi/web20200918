@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <img id="img1" onmouseover="on()" onmouseout="off()" src="pic_bulboff.gif" alt="">
+
+        <script>
+            function on(){
+                // console.log('on');
+                document.getElementById("img1").src = 'pic_bulbon.gif';
+            }
+            function off(){
+                // console.log('off');
+                document.getElementById("img1").src = 'pic_bulboff.gif';
+            }
+        </script>
+    </body>
+</html>

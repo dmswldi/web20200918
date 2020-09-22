@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+        <script>
+            function show( ) {
+                // console.log("인풋요소의 값을 p요소에 출력");
+                var txt = document.getElementById("input1").value;
+                document.getElementById("para1").innerHTML = txt;
+            }
+            
+            var car = { // var x ========= 꼭 쓰기
+                name: "kia",
+                color: "white",
+                // function start(){
+                //     console.log("출발하는 기능");
+                // }
+                start: function(){ // 객체에 함수 정의!!!!!!!!
+                    console.log("출발하는 기능");
+                }
+            };
+
+            console.log(car.name);
+            show();
+            car.start(); // 괄호 붙이기
+        </script>
+    </body>
+</html>

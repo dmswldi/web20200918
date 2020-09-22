@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            .number {
+                background-color: black;
+                color: white;
+                width: 100px;
+                height: 100px;
+                line-height: 100px; /* 문장 사이 간격, 높이 */
+                font-size: 50px;
+                font-weight: bold;
+                border-radius: 50%;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <button onclick="lottoN()">로또!!</button>
+        <!-- #num$*6 -->
+        <div class="number" id="num1"></div>
+        <div class="number" id="num2"></div>
+        <div class="number" id="num3"></div>
+        <div class="number" id="num4"></div>
+        <div class="number" id="num5"></div>
+        <div class="number" id="num6"></div>
+        
+        <!-- <div class="class"> 이렇겐 안 됨!!
+            <div id="num1"></div>
+            <div id="num2"></div>
+            <div id="num3"></div>
+            <div id="num4"></div>
+            <div id="num5"></div>
+            <div id="num6"></div>
+        </div> -->
+
+        <script>
+            function getRandomNumber(){
+                return Math.floor(Math.random()*45) + 1;// 1~45
+            }
+
+            function lotto(){
+                document.getElementById("num1").innerHTML = getRandomNumber();
+                document.getElementById("num2").innerHTML = getRandomNumber();;
+                document.getElementById("num3").innerHTML = getRandomNumber();;
+                document.getElementById("num4").innerHTML = getRandomNumber();;
+                document.getElementById("num5").innerHTML = getRandomNumber();;
+                document.getElementById("num6").innerHTML = getRandomNumber();;
+
+            }
+            // 중복 제거
+            function lottoN(){
+                var lotto = [];
+                var i = 0;
+                while (i < 6){
+                    var n = getRandomNumber(); // 난수
+                    console.log("난수: " + n);
+                    if(! sameN(n)){
+                        lotto.push(n);
+                        // console.log(lotto[i]); // n으로 한 나 바보 ^^... 
+                        document.getElementById("num"+(i+1)).innerHTML = lotto[i];
+                        // console.log("num"+(i+1));
+                        i++;
+                    }
+                }
+                function sameN(n){ // T/F
+                    return lotto.find((e) => (e === n));
+                }
+
+            }
+
+        </script>
+    </body>
+</html>

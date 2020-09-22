@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Planner - Login</title>
+        <link rel="stylesheet" href="login.css" type="text/css">
+        <script src="login.js" type="text/javascript"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <img src="plogo.png" alt="plogo">
+        <form action=".jsp" method="POST">
+            <fieldset> <!-- fieldset 자꾸 오타남 !! -->
+                <legend>  LOGIN  </legend>
+                <label for="id">ID:      </label>
+                <input type="text" name="id" id="id" autofocus> <br> 
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd"> <br> 
+                
+                <input type="checkbox" onclick="pwdToggle()" name="pwdck" id="pwdck">Show password
+                <!-- <label for="pwdck">Show password</label> -->
+                <input type="submit" value="login">
+            </fieldset>
+        </form>
+        <p>Welcome to Planner! You can manage your whole schedule!</p>
+    </body>
+</html>

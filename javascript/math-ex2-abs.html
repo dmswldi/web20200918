@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <input type="text" id="input1">
+        <br>
+        <input type="number" name="" id="input2">
+        <br>
+        <button onclick="showDiff()">두 값의 차이</button>
+        <p id="result"></p>
+
+        <script>
+            function showDiff(){
+                var x = Number(document.getElementById("input1").value);
+                var y = Number(document.getElementById("input2").value);// 이렇게 안에 선언
+                if(x >= y){
+                    document.getElementById("result").innerHTML = x-y;
+                } else {
+                    document.getElementById("result").innerHTML = y-x;
+                }
+            }
+        </script>
+    </body>
+</html>

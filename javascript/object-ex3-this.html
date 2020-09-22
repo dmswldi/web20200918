@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <script>
+            var car = {
+                name: "kia",
+                color: "black",
+                description: function(){
+                    console.log(this.name + ", " + this.color);
+                }
+            };
+
+            car.description();
+            car.color = "white";
+            car.description();
+
+        </script>
+    </body>
+</html>
