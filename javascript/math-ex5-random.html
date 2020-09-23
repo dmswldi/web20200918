@@ -7,9 +7,9 @@
         </style>
     </head>
     <body>
-        <button onclick="rpsGame(1)"><i class="fas fa-hand-rock"></i></button>
+        <button onclick="rpsGame(3)"><i class="fas fa-hand-rock"></i></button>
         <button onclick="rpsGame(2)"><i class="fas fa-hand-paper"></i></button>
-        <button onclick="rpsGame(3)"><i class="fas fa-hand-scissors"></i></button>
+        <button onclick="rpsGame(1)"><i class="fas fa-hand-scissors"></i></button>
 
         <br>
 
@@ -17,89 +17,25 @@
         <p id="result"></p>
 
         <script>
-            function rpsGame(n){
+            function rpsGame(user){
                 var r = Math.floor(Math.random()*3) + 1; // r이 1:가위, 2:보, 3:주먹
                 var fileName = "rps" + r + ".png";
                 document.getElementById("computer").src = fileName;
 
-                //console.log("n: " + n + ", r: " + r);
-
-            //     if(n==1){// 나 n: 1주먹
-            //         if(r == 1){// 컴 가위
-            //                 document.getElementById("result").innerHTML = "이겼습니다";
-            //             }
-            //             else if(r == 2){// 보
-            //                 document.getElementById("result").innerHTML = "졌습니다";
-            //             }
-            //             else {// 주먹
-            //                 document.getElementById("result").innerHTML = "비겼습니다";
-            //             }
-            //     }else if(n==2){// 나 n: 2보
-            //             if(r == 1){
-            //                 document.getElementById("result").innerHTML = "졌습니다";
-            //             }
-            //             else if(r == 2){
-            //                 document.getElementById("result").innerHTML = "비겼습니다";
-            //             }
-            //             else {
-            //                 document.getElementById("result").innerHTML = "이겼습니다";
-            //             }
-            //     }else { // 나 n: 3가위
-            //             if(r == 1){
-            //                 document.getElementById("result").innerHTML = "비겼습니다";
-            //             }
-            //             else if(r == 2){
-            //                 document.getElementById("result").innerHTML = "이겼습니다";
-            //             }
-            //             else {
-            //                 document.getElementById("result").innerHTML = "졌습니다";
-            //             }
-            //     }
-
-
-
-
-                switch(n){
-                    case 1: // 나: 주먹
-                        if(r == 1){ // 가위
-                            document.getElementById("result").innerHTML = "이겼습니다";
-                            break;
-                        }
-                        else if(r == 2){// 보
-                            document.getElementById("result").innerHTML = "졌습니다";
-                            break;
-                        }
-                        else {// 주먹
-                            document.getElementById("result").innerHTML = "비겼습니다";
-                            break;
-                        }
-                    case 2: // 나: 보
-                        if(r == 1){
-                            document.getElementById("result").innerHTML = "졌습니다";
-                            break;
-                        }
-                        else if(r == 2){
-                            document.getElementById("result").innerHTML = "비겼습니다";
-                            break;
-                        }
-                        else {
-                            document.getElementById("result").innerHTML = "이겼습니다";
-                            break;
-                        }
-                    case 3: // 나: 가위
-                        if(r == 1){
-                            document.getElementById("result").innerHTML = "비겼습니다";
-                            break;
-                        }
-                        else if(r == 2){
-                            document.getElementById("result").innerHTML = "이겼습니다";
-                            break;
-                        }
-                        else {
-                            document.getElementById("result").innerHTML = "졌습니다";
-                            break;
-                        }
-                }
+            var result;
+            
+            if(r == user) {
+                result = "비겼습니다";
+            } else if(r == 1 && user == 3) {
+                result = "이겼습니다";
+            } else if(r == 2 && user == 1) {
+                result = "이겼습니다";
+            }else if(r == 3 && user == 2) { 
+                result = "이겼습니다";
+            } else {
+                result= "졌습니다."
+            }
+            document.getElementById("result").innerHTML = result;
                 
             }
         </script>

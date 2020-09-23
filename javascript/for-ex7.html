@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        
+        <script>
+            console.log("----문제1----");
+            for(var i = 0; i < 5; i++){
+                var txt = "";
+                for(var j = 0; j <= i; j++){
+                    txt += "*";
+                }
+                console.log(txt);
+            }
+            
+            console.log("----문제2----");
+            for(var i = 5; i >= 1; i--){
+                var txt = "";
+                for(var j = 0; j < i; j++){
+                    txt += "*";
+                }
+                console.log(txt);
+            }
+            
+            console.log("----문제3----");
+            for(var i = 0; i < 5; i++){
+                var txt = "";
+                for(var j = 0; j <= i; j++){
+                    txt += "*";
+                }
+                for(var k = 0; k < 5-i; k++){
+                        txt += "#";
+                    }
+                console.log(txt);
+            }
+
+            console.log("----문제4----");
+            for(var i = 0; i < 5; i++){
+                var txt = "";
+                for(var j = 0; j <= i; j++){
+                    txt += "#";
+                }
+                for(var k = 0; k < 5-i; k++){
+                        txt += "*";
+                    }
+                console.log(txt);
+            }
+
+            console.log("----문제5----");
+            for(var i = 0; i < 5; i++){
+                var txt = "";
+                for(var j = 0; j < i; j++){
+                    txt += " ";
+                }
+                for(var k = 0; k < 5-i; k++){
+                        txt += "*";
+                }
+                console.log(txt);
+            }
+
+            console.log("----문제6----");
+            for(var i = 0; i < 5; i++){
+                var txt = "";
+                for(var j = 4; j > i ;j--){
+                    txt += " ";
+                }
+                for(var k = 0; k <= i;k++){ // 12345개 얘만고치면됨
+                    txt += "*";
+                }
+                console.log(txt);
+            }
+
+            console.log("----문제7----");
+            for(var i = 0; i < 5; i++){
+                var txt = "";
+                for(var j = 0; j < 5; j++){
+                    txt += j;
+                }
+                console.log(txt);
+            }
+
+            console.log("----문제8----");
+            for(var i = 0; i < 5; i++){
+                var txt = "";
+                for(var j = 0; j < 5; j++){
+                    txt += j+i;
+                }
+                console.log(txt);
+            }
+
+            console.log("----문제9----");
+            for(var i = 0; i < 5; i++){
+                var txt = "";
+                for(var j = 0; j <= i; j++){
+                    txt += j;
+                }
+                console.log(txt);
+            }
+
+            console.log("----문제10----");
+            var num = 0;
+            for(var i = 0; i < 5; i++){
+                var txt = "";
+                for(var j = 0; j <= i; j++){// 횟수 맞고
+                    txt += num+j;// 수정!
+                    num += j;
+                }
+                num++;
+                console.log(txt);
+            }
+        </script>
+    </body>
+</html>

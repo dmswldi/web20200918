@@ -57,3 +57,10 @@ input:last-child {
     color: white;
     cursor: pointer;
 }
+p {
+    display: none;
+    line-height: 1.6;
+    margin-right: 60px;
+    font-size: 15px;
+    display: block;
+}
