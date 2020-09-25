@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1 onclick="console.log('hello');" id="head">Lorem.</h1>
+        <h1 id="head2">Lorem.</h1>
+        <h1 id="head3">Lorem.</h1>
+        <h1 id="head4">Lorem.</h1>
+        <script>
+            function myfunc(){
+                console.log('my function');
+            }
+            var afunc = function(){ //??? 안 되는데?ㄴ
+                console.log("이름없는 함수");
+            }
+
+
+            $("#head4").click(function(){
+                console.log("이름없는 함수 2");
+            });
+            $("#head3").click(afunc);
+            $("#head2").click(myfunc); // 함수 자체가 파라미터. 함수 자체가 값이 되기 떄문.
+            $("#head1").click();
+  
+
+        </script>
+    </body>
+</html>

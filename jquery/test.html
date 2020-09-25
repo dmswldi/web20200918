@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+        <script>
+            $("document").ready(function(){
+                
+            });
+
+            function a(){
+                console.log("a");
+
+                return function() {console.log("c");};
+            }
+
+            a()(); // a c
+            console.log("경계");
+
+            var b = a; // a는 함수고, b는 a야 
+                b(); // b 함수 실행 -> 콘솔 결과 a
+                a(); // 함수 a 실행 -> 콘솔 a 찍고 함수 자체를 리턴 -> a
+        var c = a(); //  a의 리턴값을 c에 할당, c는 리턴값인 함수야
+            console.log("경계");
+
+            var d = c; // c()와 d()는 같은 결과 > c --> a c 가 아니고 c만
+                d(); // c
+                console.log(c); // 함수 자체
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

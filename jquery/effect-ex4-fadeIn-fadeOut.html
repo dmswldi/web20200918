@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+        <script>
+            $("document").ready(function(){
+                $("#btn1").click(function(){
+                    $("h1").fadeIn();
+                });
+                $("#btn2").click(function(){
+                    $("h1").fadeOut();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="btn1">fade in</button>
+        <button id="btn2">fade out</button>
+        <h1>Lorem, ipsum dolor.</h1>
+    </body>
+</html>

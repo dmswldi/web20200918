@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+        <script>
+            $("document").ready(function(){
+                $("#head1").click(function(){
+                    console.log("head1 click");
+                });
+                $("#head2").on("click", function(){
+                    console.log("head2 click");
+                });
+                $("#head3").on({ // 생소한 표현
+                    click: function(){
+                        console.log("head3 click");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id="head1">Lorem.</h1>
+        <h1 id="head2">Blanditiis?</h1>
+        <h1 id="head3">Quaerat!</h1>
+        <h1 id="head4">Dolor?</h1>
+        <h1 id="head5">Distinctio.</h1>
+    </body>
+</html>

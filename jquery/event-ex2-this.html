@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1 id="head1">Lorem.</h1>
+        <h1 id="head2">Quis!</h1>
+        <h1 id="head3">Perspiciatis.</h1>
+        <h1 id="head4">Libero?</h1>
+        <h1 id="head5">Rerum!</h1>
+        <script>
+            $("h1").click(function(){
+                // console.log("hello");
+                console.log(this); // click 이벤트를 가진 element 그 자체
+                $(this).hide(); // jquery 객체가 this, 누르면 사라짐 ㅎㅎ
+            })
+        </script>
+    </body>
+</html>
