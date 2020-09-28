@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            /* div {
+                border: 1px solid black;
+            } */
+        </style>
+        <script>
+            $("document").ready(function(){
+                $("div").first().css("border", "5px solid green");
+                $("div").last().css("border", "5px solid blue");
+
+                $("div").eq(0).css("padding", "5px");
+                $("div").eq(1).css("padding", "7px");
+                $("div").eq(2).css("padding", "9px");
+                $("div").eq(3).css("padding", "11px");
+            });
+        </script>
+    </head>
+    <body>
+        <div> <!-- 1 -->
+            <div> <!-- 2 -->
+                <div> <!-- 3 -->Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus sed nam quasi, accusantium, illum qui ut aperiam est, possimus incidunt debitis sint corrupti et tenetur rem. Voluptatem minima praesentium iste!</div>
+            </div>
+        </div>
+        <div><!-- 4 -->Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis sequi inventore explicabo totam non. Odio quae doloremque officia. Excepturi officia perferendis totam quam incidunt nisi aut error sit, assumenda officiis.</div>
+    </body>
+</html>

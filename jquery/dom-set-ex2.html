@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+        <script>
+            $("document").ready(function(){
+                /* $("#link1").click(function(){ // a 링크 클릭하는 순간 attr 배정
+                    $("#link1").attr("href", $("#input1").val());
+                }) */
+                $("#input1").keyup(function(){ // 키 떼면 링크 설정
+                    $("#link1").attr("href", $(this).val()); // this는 input tag
+                })
+
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="input1">
+        <br>
+        <a href="" id="link1">custom </a>
+    </body>
+</html>

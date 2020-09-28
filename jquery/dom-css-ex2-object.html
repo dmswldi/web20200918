@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+        <script>
+            $("document").ready(function(){
+                var obj1 = {name: "john", age: 50};
+
+                console.log(obj1.name);
+                console.log(obj1.age);
+                console.log("=========");
+                console.log(obj1["name"]);
+                console.log(obj1["age"]);
+                console.log("=========");
+                var obj2 = {"na- )me": "jane", "age": 30}; // property명도 string으로
+                // console.log(obj2.name);
+                // console.log(obj2.age);
+                console.log("=========");
+                console.log(obj2["na- )me"]);
+                console.log(obj2["age"]);
+            });
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

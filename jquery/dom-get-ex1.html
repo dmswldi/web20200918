@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+        <script>
+            $("document").ready(function(){
+                console.log($("#head1").text());
+                console.log($("#head2").html()); // tag도 같이 보임
+
+                var v = $("#input1").val();
+                console.log(v);
+
+                $("#input1").keyup(function(){
+                    var val = $(this).val();
+                    console.log(val);
+                })
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id="head1">Lorem, <span>ipsum</span> dolor.</h1>
+        <h1 id="head2">Illo, <span>enim</span> dignissimos.</h1>
+        <h1 id="head3">Perferendis, distinctio similique.</h1>
+
+        <input type="text" id="input1" value="korea">
+    </body>
+</html>

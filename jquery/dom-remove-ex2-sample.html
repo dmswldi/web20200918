@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+        <script>
+            $("document").ready(function(){
+                $("#btn1").click(function(){
+                    var newLi = $("<li />");
+                    newLi.text($("#input1").val()); // append 아니고 text > 차이가 뭐지?
+                    // <span>i</span> 그대로
+                    // newLi.append($("#input1").val()); -> tag 빠지고 i 이렇게만
+
+                    newLi.click(function(){ // 여기서 같이 remove 옵션 만들기
+                        $(this).remove();
+                    })
+                    $("#result").append(newLi);
+                })
+
+                $("#btn2").click(function(){
+                    $("#result").empty();
+                })
+
+                /* $(li).click(function(){ // li 인식을 못해ㅜㅜ
+                    alert("?");
+                    $(this).remove();
+                }) */
+                
+            });
+        </script>
+    </head>
+    <body>
+        <input type="text" id="input1">
+        <button id="btn1"><i class="fas fa-plus"></i></button>
+        <button id="btn2"><i class="fas fa-trash"></i></button>
+        <ul id="result"></ul>
+    </body>
+</html>

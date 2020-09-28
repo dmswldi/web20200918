@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            
+        </style>
+        <script>
+            $("document").ready(function(){
+                $("#div1").append("<strong>hello</strong>");
+                $("#div2").append("<p></p>");
+                $("#div3").append("<p />");
+
+                var newPara = $("<p />"); // 만들어는지는데 돔트리에 안 붙음
+                newPara.text("hello");
+                $("#div4").append(newPara);
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1">Lorem, ipsum dolor. </div>
+        <div id="div2">Lorem, ipsum dolor.</div>
+        <div id="div3">Lorem, ipsum dolor.</div>
+        <div id="div4">Lorem, ipsum dolor.</div>
+    </body>
+</html>

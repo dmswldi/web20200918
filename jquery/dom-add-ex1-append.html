@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            span {
+                display: none;
+            }
+        </style>
+        <script>
+            $("document").ready(function(){
+                $("#div1").append("hello"); // dom을 변경한 거지, 소스를 변경한 게 아님. dom은 개발자도구에서 본다
+                $("#div1").after("hello");
+            });
+        </script>
+    </head>
+    <body>
+       <div id="div1">Lorem, ipsum dolor. <span>append 자리</span> </div> <span>after 자리</span>
+
+    </body>
+</html>
